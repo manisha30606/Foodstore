@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar bg2 h-nav-resp">
+        <div class="logo">
+            <h1>FOOD.</h1>
+        </div>
+        <ul class="navlist v-class-resp">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#step-container">Steps</a></li>
+            <li><a href="#items">Food Items</a></li>
+
+            <li><a class="shopping " id="cart">My Cart</a></li>
+            <li><a href="#order">Order</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <!-- cart -->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+        <div class="cart-content">
+            <div class="cart-box">
+                <img src="img/g-7.jpg" alt="" class="cart-img">
+                <div class="detail-box">
+                    <div class="cart-product-title">Food</div>
+                    <div class="cart-price">$23</div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+                <i class="uil uil-trash  cart-remove"></i>
+            </div>
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$20</div>
+
+        </div>
+        <button type="button" class="btn-buy">Order Now</button>
+        <i class="uil uil-times" id="cart-close"></i>
+    </div>
+
+    <!-- HOME PAGE -->
+    <section class="intro background" id="home">
+
+        <div class="box-main">
+            <div class="left">
+                <h1>LIFE IS SHORT, MAKE IT SWEET</h1>
+                <p>Food is not just eating energy.It's an experience. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt doloribus sequi aliquid repudiandae quae? Porro tempora expedita eius ipsam, fugiat, error saepe ratione id consequuntur
+                    aliquam voluptatum, quas repellat ex. </p>
+
+                <button class="btn popup">
+                    Log in
+                    </button>
+            </div>
+        </div>
+
+        <!-- LOG IN  -->
+        <div class="wrapper">
+            <span class="icon-close"><i class="uil uil-times"></i></span>
+            <div class="form-box  login">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="input-box">
+                        <span class="icon"><i class="uil uil-envelope"></i></span>
+                        <input type="email" placeholder="email" required>
+                        <!-- <label>Email</label> -->
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="uil uil-lock"></i></span>
+                        <input type="password" placeholder="password" required>
+                        <!-- <label>Password</label> -->
+
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Rememeber me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btns"> Login</button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT  -->
+    <section class="About" id="About">
+        <div class="head">
+            <h1>About Us</h1>
+        </div>
+        <div class="about">
+            <div class="left">
+                <img src="img/pexels-cats-coming-920220.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1>Why Choose Us.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo eos tempore ipsum in sit perspiciatis natus, maiores animi maxime quam id dolorem delectus iste et repudiandae reiciendis nesciunt cum minus tenetur ratione aperiam culpa
+                    nulla. Doloremque totam odit cupiditate. Exercitationem quae ducimus rem atque labore unde ipsum excepturi iusto impedit. Doloremque nemo eos consectetur pariatur hic ad delectus dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo eos tempore ipsum in sit perspiciatis natus, maiores animi maxime quam id dolorem delectus iste et repudiandae reiciendis nesciunt cum minus tenetur ratione aperiam culpa
+                    nulla. Doloremque totam odit cupiditate. Exercitationem quae ducimus rem atque labore unde ipsum excepturi iusto impedit. Doloremque nemo eos consectetur pariatur hic ad delectus dolores.</p>
+
+                <button class="btn">
+                    Order Now
+                    </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="categories">
+        <div class="head">
+            <h1>Our Categories</h1>
+        </div>
+        <div class="content bg1" id="#services">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/g-7.jpg">
+                </div>
+                <div class="text">
+                    <h3>Breakfast</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, saepe?
+                    </p>
+                    <button class="btn">
+                       Order Now
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/michele-blackwell-rAyCBQTH7ws-unsplash.jpg">
+                </div>
+                <div class="text">
+                    <h3>Lunch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus.
+                    </p>
+                    <button class="btn">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/chumil-photo-TK5VlaGqkZc-unsplash.jpg">
+                </div>
+                <div class="text">
+                    <h3>Dinner</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, inventore! </p>
+                    <button class="btn">
+                     Order Now
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/p-3.jpg">
+                </div>
+                <div class="text">
+                    <h3>Snacks</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, sequi.
+                    </p>
+                    <button class="btn">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- STEPS -->
+    <div class="step-container" id="step-container">
+
+        <div class="head">
+            <h1>
+                Steps
+            </h1>
+        </div>
+
+        <section class="steps">
+
+            <div class="box">
+                <img src="img/step-1.jpg" alt="">
+                <h3>choose your favorite food</h3>
+            </div>
+            <div class="box">
+                <img src="img/step-2.jpg" alt="">
+                <h3>free and fast delivery</h3>
+            </div>
+            <div class="box">
+                <img src="img/step-3.jpg" alt="">
+                <h3>easy payments methods</h3>
+            </div>
+            <div class="box">
+                <img src="img/step-4.jpg" alt="">
+                <h3>and finally, enjoy your food</h3>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- FOODITEMS -->
+    <section class="items" id="items">
+        <div class="head">
+            <h1>Food Items</h1>
+        </div>
+        <div class="box-container">
+            <div class="box ">
+                <div class="pic">
+                    <img class="image" src="img/g-6.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <h3 class="title">Tasty food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="price">$23</span><br>
+                    <button class="btn">
+                        Order Now
+                        </button>
+                    <button class="btn1 add-cart">
+                            Add to cart
+                            </button>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img class="image" src="img/p-2.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <h3 class="title">tasty food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="price">$23</span><br>
+                    <button class="btn">
+                        Order Now
+                        </button>
+                    <button class="btn1 add-cart">
+                            Add to cart
+                            </button>
+
+
+                </div>
+            </div>
+            <div class="box ">
+                <div class="pic">
+                    <img class="image" src="img/p-1.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <h3 class="title">tasty food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="price">$23</span><br>
+                    <button class="btn ">
+                        Order Now
+                        </button>
+                    <button class="btn1 add-cart">
+                            Add to cart
+                            </button>
+
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img class="image" src="img/s-img-2.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <h3>tasty food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="price">$23</span><br>
+                    <button class="btn">
+                        Order Now
+                        </button>
+                    <button class="btn1 add-cart">
+                            Add to cart
+                            </button>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img class="image" src="img/s-img-4.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <h3>tasty food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="price">$23</span><br>
+                    <button class="btn">
+                        Order Now
+                        </button>
+                    <button class="btn1 add-cart">
+                            Add to cart
+                            </button>
+
+                </div>
+            </div>
+            <div class="box ">
+                <div class="pic">
+                    <img class="image" src="img/s-img-3.jpg" alt="">
+                </div>
+                <div class="content">
+
+                    <h3>tasty food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="price">$23</span><br>
+                    <button class="btn">
+                        Order Now
+                        </button>
+                    <button class="btn1 add-cart">
+                            Add to cart
+                            </button>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ORDER-->
+    <section class="order" id="order">
+
+        <div class="head">
+            <h1>
+                Order Now
+            </h1>
+        </div>
+        <div class="row">
+
+            <div class="image">
+                <img src="img/order-img.jpg" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="food name">
+                </div>
+
+                <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="order now" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER  -->
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="btn">facebook</a>
+            <a href="#" class="btn">twitter</a>
+            <a href="#" class="btn">instagram</a>
+            <a href="#" class="btn">pinterest</a>
+            <a href="#" class="btn">linkedin</a>
+        </div>
+
+        <h1 class="credit"> created by <span> manisha kumari </span> | all rights reserved! </h1>
+
+    </section>
+
+
+    <!-- SCROLL TOP BUTTON  -->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up"></i>
+    </a>
+
+    <!-- SCRIPT SRC -->
+    <script src="script.js "></script>
+</body>
+
+</html>
