@@ -759,7 +759,7 @@ html {
  .cart{
   right : -400px; 
 }
-
+}
 @media only screen and (max-width: 550px) {
     .box-main .left h1 {
         font-size: 20px;
