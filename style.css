@@ -754,8 +754,10 @@ html {
 
 @media only screen and (max-width: 461px) {
     .box-container {
-        margin: 20px 10px
+        margin: 20px 10px;
     }
+ .cart{
+  right : -400px; 
 }
 
 @media only screen and (max-width: 550px) {
